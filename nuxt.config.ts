@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@vite-pwa/nuxt", "@nuxtjs/tailwindcss"],
   app: {
+    baseURL: "/nuxt-pwa/",
     head: {
       link: [
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }, // TODO: Doesn't work
