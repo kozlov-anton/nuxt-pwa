@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
+    "deploy": "nuxt generate && node scripts/fix-base-path.mjs && touch .output/public/.nojekyll && gh-pages -d .output/public --dotfiles",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "nuxt generate && gh-pages -d .output/public"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "6.14.0",

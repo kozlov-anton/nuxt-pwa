@@ -1,3 +1,3 @@
 <template>
-    <div>Vacancies</div>
+    <h1>Vacancies</h1>
 </template>

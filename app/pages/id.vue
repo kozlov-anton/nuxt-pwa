@@ -1,3 +1,3 @@
 <template>
-    <div>Id</div>
+    <h1>Id</h1>
 </template>
