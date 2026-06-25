@@ -27,7 +27,7 @@ export default {
     borderRadius: {
       chip: "8px",
       btn: "12px",
-      card: "16px",
+      card: "20px",
     },
   },
 } satisfies Config;
