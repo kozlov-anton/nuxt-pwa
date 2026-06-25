@@ -3,8 +3,10 @@ import BottomNav from "~/components/nav/BottomNav.vue";
 </script>
 
 <template>
-    <main class="pb-20 bg-secondary w-full max-w-2xl mx-auto p-3">
-        <slot />
-    </main>
-    <BottomNav />
+    <div class="min-h-dvh w-full max-w-2xl mx-auto flex flex-col bg-secondary">
+        <main class="flex-1 px-5 py-6 overflow-y-auto">
+            <slot />
+        </main>
+        <BottomNav />
+    </div>
 </template>

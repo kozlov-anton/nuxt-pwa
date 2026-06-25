@@ -5,6 +5,9 @@ export default {
   content: ["./app/**/*.{vue,ts}"],
   theme: {
     extend: {
+      fontFamily: {
+        ua: ["eUkraine", "sans-serif"],
+      },
       colors: {
         /*brand: {
           50: "#f0f9ff",
@@ -20,6 +23,11 @@ export default {
         bronse: "#6b4b19",
         olive: "#6d8764",
       },
+    },
+    borderRadius: {
+      chip: "8px",
+      btn: "12px",
+      card: "16px",
     },
   },
 } satisfies Config;

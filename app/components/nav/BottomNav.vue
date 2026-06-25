@@ -14,7 +14,7 @@ const isOpen = ref(false);
 
 <template>
     <nav
-        class="fixed bottom-0 left-0 right-0 flex justify-around items-center px-2 pb-safe pt-3 bg-white border-t border-gray-100"
+        class="sticky bottom-0 w-full px-4 pt-3 pb-[max(12px,env(safe-area-inset-bottom))] flex justify-around items-center bg-white border-t border-gray-100"
     >
         <NuxtLink
             v-for="item in routes"
@@ -24,10 +24,10 @@ const isOpen = ref(false);
             :class="isActive(item.path) ? 'text-gray-900' : 'text-gray-400'"
         >
             <span :class="[item.icon, 'text-2xl']" />
-            <span class="text-[11px] font-medium">{{ item.label }}</span>
+            <span class="text-[11px] font-light">{{ item.label }}</span>
         </NuxtLink>
         <div>
-            <button @click="isOpen = true" class="text-[11px] font-medium">
+            <button @click="isOpen = true" class="text-[11px] font-light">
                 Меню
             </button>
             <Modal v-if="isOpen" isCloseBtn @close="isOpen = false">

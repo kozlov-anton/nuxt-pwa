@@ -6,6 +6,12 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/nuxt-pwa/",
     head: {
+      meta: [
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1, viewport-fit=cover",
+        },
+      ],
       link: [
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }, // TODO: Doesn't work
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -44,4 +50,5 @@ export default defineNuxtConfig({
       type: "module",
     },
   },
+  css: ["~/assets/css/main.css"],
 });
