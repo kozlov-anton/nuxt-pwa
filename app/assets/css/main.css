@@ -28,4 +28,10 @@
     html {
         font-family: "eUkraine", sans-serif;
     }
+    h1 {
+        @apply my-3;
+    }
+    h2 {
+        @apply my-2;
+    }
 }
