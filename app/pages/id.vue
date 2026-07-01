@@ -93,6 +93,10 @@ async function updateMetadata() {
         "Vuex",
         "Redux",
         "Vite",
+        "Algolia",
+        "Adobe Commerce",
+        "Headless Commerce",
+        "Frontend Engineer",
     ]);
     pdfDoc.setProducer("");
     pdfDoc.setCreator("");
