@@ -1,14 +1,24 @@
 <template>
     <h1>Update PDF metadata</h1>
     <Card className="flex flex-col">
-        <div class="mb-3">
-            <input type="file" @change="handleFileChange" accept=".pdf" />
-            <button class="bg-orange rounded-card p-2" @click="updateMetadata">
+        <div
+            class="flex justify-between items-normal flex-col md:flex-row md:items-center"
+        >
+            <input
+                type="file"
+                class="w-full"
+                @change="handleFileChange"
+                accept=".pdf"
+            />
+            <button
+                class="bg-orange rounded-card p-2 whitespace-nowrap mt-3 md:mt-0 md:ml-3"
+                @click="updateMetadata"
+            >
                 Update Metadata
             </button>
         </div>
 
-        <hr v-if="metadata" />
+        <hr v-if="metadata" class="mt-3" />
         <div v-if="metadata" class="mt-3">
             <p><strong>Title:</strong> {{ metadata.Title }}</p>
             <p><strong>Subject:</strong> {{ metadata.Subject }}</p>
