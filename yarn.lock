@@ -1590,6 +1590,16 @@
     vite-plugin-checker "^0.14.1"
     vue-bundle-renderer "^2.2.0"
 
+"@nuxtjs/supabase@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/supabase/-/supabase-2.0.9.tgz#477c68fa9974740b6a55ba1a22a859a4ecb908a0"
+  integrity sha512-nDPslxt/Af5ya21m19rcb0kwZeAYVcvfw3VOxiViZuW0OFL0Xmi+kowSoqXnyuNJKEesvmXZKBV0rwh0FSERHg==
+  dependencies:
+    "@supabase/ssr" "^0.10.3"
+    "@supabase/supabase-js" "^2.106.0"
+    defu "^6.1.7"
+    pathe "^2.0.3"
+
 "@nuxtjs/tailwindcss@6.14.0":
   version "6.14.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-6.14.0.tgz#c2feffc4ea4f5c4bd8d60218841d8bae84f70271"
@@ -2308,6 +2318,66 @@
   resolved "https://registry.yarnpkg.com/@speed-highlight/core/-/core-1.2.16.tgz#9872a764945362fbbffb83a1aef14890eb9caa1a"
   integrity sha512-yNm/fYEcnpRjYduLMaddTK9XKYil6xB88+qFg79ZdZhHu1PadfoQmFW7pVTx7FZqMBNcUuThiAhxhENgtAO2/w==
 
+"@supabase/auth-js@2.110.0":
+  version "2.110.0"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-js/-/auth-js-2.110.0.tgz#75cc05d4cd648ed5fb196803896c36a009464344"
+  integrity sha512-Mi288WCTp6wxMFCOu/UgzgHEXODjdl2uVTLqK11eanzGZaldU3RyP8Am+ZbNuVzFP+5+iOvppxzv7N5Ym84xTg==
+  dependencies:
+    tslib "2.8.1"
+
+"@supabase/functions-js@2.110.0":
+  version "2.110.0"
+  resolved "https://registry.yarnpkg.com/@supabase/functions-js/-/functions-js-2.110.0.tgz#94208f2c9a728f38f7d0b613670a2b9ed80eceff"
+  integrity sha512-Fde5wlY8ZZy+9yqrWlQHo8MacSyUBArBEtN2boB4thJQigPnQD/cc61qZN0n3I1L0gwhWtHYwIMnOBKxSvF6Hw==
+  dependencies:
+    tslib "2.8.1"
+
+"@supabase/phoenix@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@supabase/phoenix/-/phoenix-0.4.4.tgz#982e47b902b5927df7e3bc49e1680142c8bdb5d9"
+  integrity sha512-Gt0pqoXuIqX/8dvG0OKp/wMCobXNH3klNbUPBNyOfN0YA1IswrM3HyWFMOPk1Jy+BRaIyDPcFx4jLBwHNmlyfQ==
+
+"@supabase/postgrest-js@2.110.0":
+  version "2.110.0"
+  resolved "https://registry.yarnpkg.com/@supabase/postgrest-js/-/postgrest-js-2.110.0.tgz#af27cd2c1d10a3dcf182a60e8ff1078d376d64cf"
+  integrity sha512-ZbC1QZL3jcvBUfVKjJbgRM27G4Mg3Zzqdm44m5pJafe1e52Cli793EOnwQucomBAGEUDd03Nzaf7XV3ji/XexQ==
+  dependencies:
+    tslib "2.8.1"
+
+"@supabase/realtime-js@2.110.0":
+  version "2.110.0"
+  resolved "https://registry.yarnpkg.com/@supabase/realtime-js/-/realtime-js-2.110.0.tgz#503f667fdc2ecb6f0300ab7d8d29c790f23305f4"
+  integrity sha512-Wn2AWpneZuDFTkp/65tqctvoh+3JvyTjMam8sTMqVWy5BgkU8zAvFwilPYPPPhkINeKF8NAJKP7FclJ2iGCUMw==
+  dependencies:
+    "@supabase/phoenix" "0.4.4"
+    tslib "2.8.1"
+
+"@supabase/ssr@^0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@supabase/ssr/-/ssr-0.10.3.tgz#dcd5a47d4af828045a426e0032a88c69ef909be5"
+  integrity sha512-ux2CJgX89h0Fz2lY7ZNafNG2SkXpyRc5dz77K9eKeBLPdtywQixKwIuetDeIViAJBp/buOUVmgj8PVesOklNpw==
+  dependencies:
+    cookie "^1.0.2"
+
+"@supabase/storage-js@2.110.0":
+  version "2.110.0"
+  resolved "https://registry.yarnpkg.com/@supabase/storage-js/-/storage-js-2.110.0.tgz#0fc78b081597ab8f9aca3a6649f837a5ac20cd42"
+  integrity sha512-71+gU3HrhiylAhftY6FmO5PPdcsScnVcS766CVD+vTYK9qTDLbrx8FhgBYbqGm3iV/wkTfzrNJfjGsMeFRkJRQ==
+  dependencies:
+    iceberg-js "^0.8.1"
+    tslib "2.8.1"
+
+"@supabase/supabase-js@^2.106.0":
+  version "2.110.0"
+  resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-2.110.0.tgz#d31d54dd4d87e5a1f46e48511e1f02707a01d87b"
+  integrity sha512-8yI84VJiEVW4zxZpLUmxXmjzQ7O2St9X/ymzlBETDHTURPWG3LmvbSiibq+7dqAJmyoUfxZnSfXeM4HCM8s4XQ==
+  dependencies:
+    "@supabase/auth-js" "2.110.0"
+    "@supabase/functions-js" "2.110.0"
+    "@supabase/postgrest-js" "2.110.0"
+    "@supabase/realtime-js" "2.110.0"
+    "@supabase/storage-js" "2.110.0"
+
 "@trickfilm400/rollup-plugin-off-main-thread@^3.0.0-pre1":
   version "3.0.0-pre1"
   resolved "https://registry.yarnpkg.com/@trickfilm400/rollup-plugin-off-main-thread/-/rollup-plugin-off-main-thread-3.0.0-pre1.tgz#1ffeab04d8972063de4ad1a948b3e550e11dc745"
@@ -2349,6 +2419,11 @@
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.7.tgz#baccb07a970b91707df3a3e8ba6896c57ead2d11"
   integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
+
+"@types/web-bluetooth@^0.0.21":
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.21.tgz#525433c784aed9b457aaa0ee3d92aeb71f346b63"
+  integrity sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==
 
 "@unhead/vue@^2.1.15":
   version "2.1.15"
@@ -2555,6 +2630,25 @@
   version "3.5.38"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.5.38.tgz#6c4be4defd86cdc35bfa2b7dd45d7b11a5d51101"
   integrity sha512-FTW0AFZNaK5/mOqvGBwVfUlNLU38TiQn4+DQgIFUnrBBJQ1crMJ82yeGQLV5jyKFsO8yRukpbuP7x+nRbH6aug==
+
+"@vueuse/core@^14.3.0":
+  version "14.3.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-14.3.0.tgz#66c92f9ad7ee989e4a8fd23ec368e55429ea42b2"
+  integrity sha512-aHfz47g0ZhMtTVHmIzMVpJy8ePhhOy68GY5bv110+5DVtZ+W7BsOx+m61UNQqfrWyPztIHIanWa3E2tib3NFIw==
+  dependencies:
+    "@types/web-bluetooth" "^0.0.21"
+    "@vueuse/metadata" "14.3.0"
+    "@vueuse/shared" "14.3.0"
+
+"@vueuse/metadata@14.3.0":
+  version "14.3.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-14.3.0.tgz#d782b00732d1568503027965c0be92bc1699d76c"
+  integrity sha512-BwxmbAzwAVF50+MW57GXOUEV61nFBGnlBvrTqj49PqWJu3uw7hdu72ztXeZ33RdZtDY6kO+bfCAE1PCn88Tktw==
+
+"@vueuse/shared@14.3.0":
+  version "14.3.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-14.3.0.tgz#a3e7e6391f9ed7f363cbb28c32c4a278efaacbd0"
+  integrity sha512-bZpge9eSXwa4ToSiqJ7j6KRwhAsneMFoSz3LMWKQDkqimm3D/tbFlrklrs/IOqC8tEcYmXQZJ6N0UrjhBirVCg==
 
 abbrev@^3.0.0:
   version "3.0.1"
@@ -3202,6 +3296,11 @@ cookie-es@^3.0.1, cookie-es@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/cookie-es/-/cookie-es-3.1.1.tgz#c4a8a16cf88cb5a185b23f4a61d6e9a85eb53287"
   integrity sha512-UaXxwISYJPTr9hwQxMFYZ7kNhSXboMXP+Z3TRX6f1/NyaGPfuNUZOWP1pUEb75B2HjfklIYLVRfWiFZJyC6Npg==
+
+cookie@^1.0.2:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/cookie/-/cookie-1.1.1.tgz#3bb9bdfc82369db9c2f69c93c9c3ceb310c88b3c"
+  integrity sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==
 
 cookies@~0.9.0:
   version "0.9.1"
@@ -4447,6 +4546,11 @@ human-signals@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-5.0.0.tgz#42665a284f9ae0dade3ba41ebc37eb4b852f3a28"
   integrity sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==
+
+iceberg-js@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/iceberg-js/-/iceberg-js-0.8.1.tgz#47d893468293a010385e1c70123f29d0fc1d9912"
+  integrity sha512-1dhVQZXhcHje7798IVM+xoo/1ZdVfzOMIc8/rgVSijRK38EDqOJoGula9N/8ZI5RD8QTxNQtK/Gozpr+qUqRRA==
 
 idb@^7.0.1:
   version "7.1.1"
@@ -7191,15 +7295,15 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
+tslib@2.8.1, tslib@^2.4.0:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
+  integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
+
 tslib@^1.11.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
-
-tslib@^2.4.0:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
-  integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
 
 tsscmp@1.0.6:
   version "1.0.6"

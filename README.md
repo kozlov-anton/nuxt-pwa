@@ -72,4 +72,12 @@ ollama list
 ollama ps 
 ```
 
+## Supabase
+
+DB Pass
+
+```bash
+AllohaMyFr1end!
+```
+
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

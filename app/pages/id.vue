@@ -3,7 +3,10 @@
     <Card className="flex flex-col">
         <div class="mb-3">
             <input type="file" @change="handleFileChange" accept=".pdf" />
-            <button class="bg-orange rounded-card p-2" @click="updateMetadata">
+            <button
+                class="bg-orange rounded-card py-2 px-3"
+                @click="updateMetadata"
+            >
                 Update Metadata
             </button>
         </div>
@@ -71,7 +74,9 @@ async function updateMetadata() {
     // Update metadata
     pdfDoc.setTitle("Anton Kozlov - Senior Frontend Engineer");
     pdfDoc.setAuthor("Anton Kozlov");
-    pdfDoc.setSubject("Application for Senior Frontend Engineer role");
+    pdfDoc.setSubject(
+        "Application for the Senior Full-Stack Headless Developer. Anton Kozlov",
+    );
     pdfDoc.setKeywords([
         "Vue.js",
         "Vue",
@@ -105,7 +110,7 @@ async function updateMetadata() {
     // Save the updated PDF file
     saveAs(
         new Blob([updatedPdfBytes]),
-        "CV Kozlov Anton - Frontend Engineer.pdf",
+        "Application for the Senior Full-Stack Headless Developer - Anton Kozlov.pdf",
     );
 }
 </script>
